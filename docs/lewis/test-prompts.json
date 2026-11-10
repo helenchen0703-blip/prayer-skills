@@ -1,0 +1,141 @@
+{
+  "skill": "lewis-prayer",
+  "version": "1.0.0",
+  "source_book": "祷告的奥秘",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "l01-normal",
+      "type": "should_trigger",
+      "prompt": "我只会背现成祷文，念完又感觉空空的，今天怎么祷告？",
+      "expected_behavior": "经 lewis-prayer 使用 form-and-words。使用能理解的现成一句加当日自己的话，给实际示范和选择理由"
+    },
+    {
+      "id": "l01-edge",
+      "type": "edge_case",
+      "prompt": "我一静下来就走神，是不是还得坚持无言祷告？",
+      "expected_behavior": "经 lewis-prayer 使用 form-and-words。直接给可用的一句开口并允许短暂安静，拒绝把无言当硬门槛"
+    },
+    {
+      "id": "l02-normal",
+      "type": "should_trigger",
+      "prompt": "我每晚躺下已经累到睡着，通勤有几分钟，路易斯会怎么建议？",
+      "expected_behavior": "经 lewis-prayer 使用 start-when-dry。明确选清醒的通勤窗口，提供一句可说的话，不要求特定感受"
+    },
+    {
+      "id": "l02-edge",
+      "type": "edge_case",
+      "prompt": "我只有临睡前一点时间，其他时候在照顾家人。",
+      "expected_behavior": "经 lewis-prayer 使用 start-when-dry。尊重目前唯一时段，缩短并给可直接念的开场，允许身体限制"
+    },
+    {
+      "id": "l03-normal",
+      "type": "should_trigger",
+      "prompt": "我想求这次提案被采用，又觉得为这种小事祷告很虚荣。",
+      "expected_behavior": "经 lewis-prayer 使用 name-real-desire。说出真实的提案愿望，允许合理的小事，区分执着并给祷告"
+    },
+    {
+      "id": "l03-edge",
+      "type": "edge_case",
+      "prompt": "我嫉妒同事，心里其实希望她当众出丑。",
+      "expected_behavior": "经 lewis-prayer 使用 name-real-desire。如实命名嫉妒，不写出求她出丑的祈求，转为求改变和善意"
+    },
+    {
+      "id": "l04-normal",
+      "type": "should_trigger",
+      "prompt": "我一直拖着没给父亲打电话，怎么把这件事放进「愿祢的旨意成就」？",
+      "expected_behavior": "经 lewis-prayer 使用 lords-prayer-embroidery。先保持原祈求共享义，再标注一条彩饰，连到打电话"
+    },
+    {
+      "id": "l04-edge",
+      "type": "edge_case",
+      "prompt": "可以把「愿祢的旨意成就」解释成这次一定要录取我吗？",
+      "expected_behavior": "经 lewis-prayer 使用 lords-prayer-embroidery。不把录取当旨意原义或保证，愿望另说并保留未知"
+    },
+    {
+      "id": "l05-normal",
+      "type": "should_trigger",
+      "prompt": "朋友的孩子病情未明，她害怕得睡不着，帮我写一段按路易斯思路的代祷。",
+      "expected_behavior": "经 lewis-prayer 使用 petition-with-uncertainty。不保证病情结果，同时求具体帮助、承认害怕，可加陪伴"
+    },
+    {
+      "id": "l05-edge",
+      "type": "edge_case",
+      "prompt": "我为亲人病愈祈求但他去世了，是不是我信心不够？",
+      "expected_behavior": "经 lewis-prayer 使用 petition-with-uncertainty。先承认丧亲，明说无从归咎信心，留下一句可用哀告"
+    },
+    {
+      "id": "l06-normal",
+      "type": "should_trigger",
+      "prompt": "我祷告时一直想表现得很平安，其实在生气，怎么诚实开始？",
+      "expected_behavior": "经 lewis-prayer 使用 true-self-real-god。辨认表现和实际情绪，给向真实对象开口的句子"
+    },
+    {
+      "id": "l06-edge",
+      "type": "edge_case",
+      "prompt": "我在脑中看见一束光，这是不是神在告诉我明天要做什么？",
+      "expected_behavior": "经 lewis-prayer 使用 true-self-real-god。不把光当指令或保证，分开体验和解释，可暂停图像"
+    },
+    {
+      "id": "l07-normal",
+      "type": "should_trigger",
+      "prompt": "刚下雨的窗外有一股清新的气味，怎么按路易斯从这里开始敬拜？",
+      "expected_behavior": "经 lewis-prayer 使用 pleasure-to-worship。保留雨后气味这一具体感受，再由礼物转向赐予者"
+    },
+    {
+      "id": "l07-edge",
+      "type": "edge_case",
+      "prompt": "我现在很难过，完全想不起快乐的事，需要硬找一个吗？",
+      "expected_behavior": "经 lewis-prayer 使用 pleasure-to-worship。允许悲伤且不强制制造欢愉，以诚实的简短回应收束"
+    },
+    {
+      "id": "l08-normal",
+      "type": "should_trigger",
+      "prompt": "我说了朋友的隐私，之后一直很羞愧，怎么按这本书作回应？",
+      "expected_behavior": "经 lewis-prayer 使用 confess-specific-action。明确泄露行为、可能影响及一个具体修复，羞耻不当作事实"
+    },
+    {
+      "id": "l08-edge",
+      "type": "edge_case",
+      "prompt": "我整天都觉得自己有罪，却想不出具体事，能不能帮我找出来？",
+      "expected_behavior": "经 lewis-prayer 使用 confess-specific-action。不诱导盘点或定罪，求眼下够用的自知，回到已知责任"
+    },
+    {
+      "id": "probe-overview",
+      "type": "should_trigger",
+      "prompt": "请介绍 C. S. 路易斯《祷告的奥秘》这本书的整体结构和主旨。",
+      "expected_behavior": "用该书 overview.md 解释全书骨架。"
+    },
+    {
+      "id": "probe-linux",
+      "type": "should_not_trigger",
+      "prompt": "Linux 下怎么看一个文件的权限？",
+      "expected_behavior": "作为 Linux 问题回答。"
+    },
+    {
+      "id": "probe-keller-daily",
+      "type": "should_not_trigger",
+      "prompt": "请按提摩太·凯勒的《祷告解密》安排一个每天可用的祷告练习。",
+      "expected_behavior": "把这项请求交给 keller-prayer。"
+    },
+    {
+      "id": "h01",
+      "type": "edge_case",
+      "prompt": "我不想硬逼自己祷告到开心。今天什么东西都提不起兴趣，我只想诚实说一句。",
+      "expected_behavior": "经 lewis-prayer 使用 start-when-dry，交付该请求所需的实际答复。"
+    },
+    {
+      "id": "h03",
+      "type": "edge_case",
+      "prompt": "我熟悉主祷文，想让「愿你的国降临」连到今天在家照顾父亲的事。路易斯说的彩饰怎么用？",
+      "expected_behavior": "经 lewis-prayer 使用 lords-prayer-embroidery，交付该请求所需的实际答复。"
+    },
+    {
+      "id": "h04",
+      "type": "edge_case",
+      "prompt": "我只想为一件事祈求。为爸爸祷告很久了，事情还是没起色。我怕自己已经没资格向神开口。",
+      "expected_behavior": "经 lewis-prayer 使用 petition-with-uncertainty，交付该请求所需的实际答复。"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

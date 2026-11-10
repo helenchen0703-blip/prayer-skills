@@ -1,0 +1,38 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "453d80b337ad7cb4dae5dc1ebfade3f18eb2c2442b7f5e02747af9fe9daa7c8d",
+    "references/capabilities/confess-specific-action.md": "393f44c4fb96bb7f5c3fbddc7cee2476297b717dc7138398a867e42a3c8442a9",
+    "references/capabilities/form-and-words.md": "9a9f8a3f9cbc40d2836d858234314fc6a8d678bcc0c27af75d6239e757291008",
+    "references/capabilities/lords-prayer-embroidery.md": "fdbbdd6a80aec58ad9e6ba441fc158f8ca136eb898f96003d048e31c9404590c",
+    "references/capabilities/name-real-desire.md": "846fa94759b377febc21d25a0ae2e0ee7c51ea6b206a71f5b58e07985b9a852b",
+    "references/capabilities/petition-with-uncertainty.md": "d3153cf8794d6dd768a1ceb563b42d717d957cab20bc6d280065bdb16d367cd8",
+    "references/capabilities/pleasure-to-worship.md": "1541dcf5d369230b94e05391ec83c8d285706ec6dff5bb4fa92dfe26d56ce359",
+    "references/capabilities/start-when-dry.md": "63c999bad037ff791a027466f0bf86fbe9f2c1cfc5238786852f5e92f08f48e3",
+    "references/capabilities/true-self-real-god.md": "53b47488c043c6820c62ab4ace84dd527401a062f87736a12ec8cdff84f7d9f9",
+    "references/capability-index.md": "37cc536becae6d477ad3eea789d798a8b3987cb0454f1720a0e42d2a3d02ea2e",
+    "references/cheatsheet.md": "ff12c444dcb90b21a5b3c3a7255ffac09aa3942bc56165a60435a0b99fb45aec",
+    "references/glossary.md": "e5ba4a4fb651b02ca110c96bc1b03e4e5d7af3371c6cdabfd65ab4ef31b97985",
+    "references/overview.md": "36b7205033b1f5c039d4e3d3d10768b79c241256ca6deea7c0bcf7b09ecd6737"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.lewis-prayer",
+  "bundle_sha256": "aafcabd714d5597dbed7d09c060ca249c9eac8aaec2227e4eb6aee715f9d807b",
+  "variant": "single",
+  "run_id": "run-20261110-205951-63ad36",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 8,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}

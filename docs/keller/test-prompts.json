@@ -1,0 +1,159 @@
+{
+  "skill": "keller-prayer",
+  "version": "1.0.0",
+  "source_book": "祷告解密",
+  "darwin_compatible": true,
+  "test_cases": [
+    {
+      "id": "k01-normal",
+      "type": "should_trigger",
+      "prompt": "用诗篇 23:1 带我默想，最近我为未来的钱很焦虑。",
+      "expected_behavior": "经 keller-prayer 使用 scripture-to-prayer。诗篇23:1为锚点，一项确切教导，转成针对财务焦虑的祷告"
+    },
+    {
+      "id": "k01-edge",
+      "type": "edge_case",
+      "prompt": "我只记得一句「我凡事都能做」，帮我祷告面试一定成功。",
+      "expected_behavior": "经 keller-prayer 使用 scripture-to-prayer。辨认腓立比书4:13的处境，给可用祷告且不保证结果"
+    },
+    {
+      "id": "k02-normal",
+      "type": "should_trigger",
+      "prompt": "明天开始新工作，按凯勒教的方法带我用主祷文祷告。",
+      "expected_behavior": "经 keller-prayer 使用 lords-prayer-pattern。完整或明确有次序地覆盖主祷文主要祈求，保留「我们」，连接新工作"
+    },
+    {
+      "id": "k02-edge",
+      "type": "edge_case",
+      "prompt": "用「赦免我们的债」帮我求神让所有同事原谅我，其他的都不用提。",
+      "expected_behavior": "经 keller-prayer 使用 lords-prayer-pattern。保留赦免及饶恕人的含义，用户可请求和修复，结果由别人决定"
+    },
+    {
+      "id": "k03-normal",
+      "type": "should_trigger",
+      "prompt": "我每次都只求工作顺利和家人健康，凯勒的试金石可以怎么帮我？",
+      "expected_behavior": "经 keller-prayer 使用 prayer-touchstones。根据具体事实用平衡视角诊断，给下一次一个可做的小调整"
+    },
+    {
+      "id": "k03-edge",
+      "type": "edge_case",
+      "prompt": "给我的祷告打 1 到 100 分，看看上帝会不会听。",
+      "expected_behavior": "经 keller-prayer 使用 prayer-touchstones。不打分预测垂听，给恩典原则或可观察的替代检视"
+    },
+    {
+      "id": "k04-normal",
+      "type": "should_trigger",
+      "prompt": "我知道上帝爱我，最近默想却很干，凯勒会建议我怎么祷告？",
+      "expected_behavior": "经 keller-prayer 使用 seek-gods-face。经文或明确信仰锚点，允许枯干，给一句可说的话与持续动作"
+    },
+    {
+      "id": "k04-edge",
+      "type": "edge_case",
+      "prompt": "我祷告时突然很兴奋，是不是上帝保证我该换工作？",
+      "expected_behavior": "经 keller-prayer 使用 seek-gods-face。不把兴奋当命令，以文本可支持的话及一个常规下一步收束"
+    },
+    {
+      "id": "k05-normal",
+      "type": "should_trigger",
+      "prompt": "今天同事留下来帮我做完工作，带我各说一句赞美和感恩。",
+      "expected_behavior": "经 keller-prayer 使用 adoration-and-thanks。给具体且分别的赞美和感恩各一句"
+    },
+    {
+      "id": "k05-edge",
+      "type": "edge_case",
+      "prompt": "我刚经历丧亲，暂时不想说感恩的话，可以怎么处理？",
+      "expected_behavior": "经 keller-prayer 使用 adoration-and-thanks。允许哀告与停下，给现在可诚实说的话，不解释丧亲"
+    },
+    {
+      "id": "k06-normal",
+      "type": "should_trigger",
+      "prompt": "我对孩子说了伤人的话，想按凯勒的思路认罪，也愿意修复。",
+      "expected_behavior": "经 keller-prayer 使用 grace-based-confession。明确行为，恩典/赦免回应，向孩子的一个具体修复"
+    },
+    {
+      "id": "k06-edge",
+      "type": "edge_case",
+      "prompt": "我说不出做错什么，只觉得神肯定讨厌我，你替我查查还有哪些罪。",
+      "expected_behavior": "经 keller-prayer 使用 grace-based-confession。不搜索不存在的罪，给具体行为的辨识阈值和恩典依据"
+    },
+    {
+      "id": "k07-normal",
+      "type": "should_trigger",
+      "prompt": "我找工作几个月都没结果，帮我按凯勒的思路诚实祈求。",
+      "expected_behavior": "经 keller-prayer 使用 petition-and-lament。写出等待的处境、工作请求和开放交托，允许哀告"
+    },
+    {
+      "id": "k07-edge",
+      "type": "edge_case",
+      "prompt": "怎么祷告才能确保病人这周痊愈？",
+      "expected_behavior": "经 keller-prayer 使用 petition-and-lament。不保证期限和医治，仍有具体祈求及交托"
+    },
+    {
+      "id": "k08-normal",
+      "type": "should_trigger",
+      "prompt": "每天午休只有 8 分钟，帮我按凯勒的框架安排可以实际跟做的一轮。",
+      "expected_behavior": "经 keller-prayer 使用 daily-prayer-rhythm。8分钟总时长与经文，五环节可跟做，标明时间为适配"
+    },
+    {
+      "id": "k08-edge",
+      "type": "edge_case",
+      "prompt": "我有 15 分钟，但没选经文，今天可以直接开始吗？",
+      "expected_behavior": "经 keller-prayer 使用 daily-prayer-rhythm。给一个经文和原书15分钟框架，可现在开始"
+    },
+    {
+      "id": "k09-normal",
+      "type": "should_trigger",
+      "prompt": "我感到被抛下，想用诗篇 13 篇向神说，又不想假装已经没事。",
+      "expected_behavior": "经 keller-prayer 使用 psalms-in-prayer。诗篇13选段，保留「还要多久」或等价哀告，信靠不等于已经没事"
+    },
+    {
+      "id": "k09-edge",
+      "type": "edge_case",
+      "prompt": "我带小组用诗篇祷告，可以把组员私下告诉我的病情写进去吗？",
+      "expected_behavior": "经 keller-prayer 使用 psalms-in-prayer。保护未经同意的病情，给一条可共同说的替代祷告"
+    },
+    {
+      "id": "k10-normal",
+      "type": "should_trigger",
+      "prompt": "我希望加薪，生活确实有压力，又觉得不升职就没价值，按凯勒的方法怎么祷告？",
+      "expected_behavior": "经 keller-prayer 使用 order-desires。分开收入压力和自我价值期待，保留够用的祈求，并调整愿望位置"
+    },
+    {
+      "id": "k10-edge",
+      "type": "edge_case",
+      "prompt": "我想请你根据这条愿望判断我是不是贪婪。",
+      "expected_behavior": "经 keller-prayer 使用 order-desires。不替用户判定贪婪，给具体的辨识问题和可用祈求"
+    },
+    {
+      "id": "probe-book-overview",
+      "type": "should_trigger",
+      "prompt": "请概览提摩太·凯勒的《祷告解密》整本书。",
+      "expected_behavior": "用该书 overview.md 解释全书骨架。"
+    },
+    {
+      "id": "probe-linux-permissions",
+      "type": "should_not_trigger",
+      "prompt": "Linux 文件权限怎么看和修改？",
+      "expected_behavior": "作为 Linux 问题回答。"
+    },
+    {
+      "id": "probe-lewis-embroidery",
+      "type": "should_not_trigger",
+      "prompt": "请用 C. S. 路易斯的主祷文「彩饰」，帮我祷告「愿你的旨意成就」。",
+      "expected_behavior": "把这项请求交给 lewis-prayer。"
+    },
+    {
+      "id": "h02",
+      "type": "edge_case",
+      "prompt": "按凯勒的方法帮我用一段经文操练祷告，明天早晨只有十分钟。",
+      "expected_behavior": "经 keller-prayer 使用 daily-prayer-rhythm，交付该请求所需的实际答复。"
+    },
+    {
+      "id": "h05",
+      "type": "edge_case",
+      "prompt": "我读完诗篇 46:1，却只想到赶快离开现在的难处。请带我把经文默想成自己的祷告。",
+      "expected_behavior": "经 keller-prayer 使用 scripture-to-prayer，交付该请求所需的实际答复。"
+    }
+  ],
+  "minimum_pass_rate": 0.8
+}

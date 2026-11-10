@@ -1,0 +1,40 @@
+{
+  "tool": "cangjie-tools v2.5.0",
+  "published_hashes": {
+    "SKILL.md": "11fa302e75ed5b023303d962e2e10c4235f76e4a229d2dba96953723155074d9",
+    "references/capabilities/adoration-and-thanks.md": "e5f9fa72436362500e8027b5aeb2786a758bb742014837937b8b03cc73473d5d",
+    "references/capabilities/daily-prayer-rhythm.md": "76e91ff53f14c37a513160e5a4f134388b59f29daa6f605bf4ca4be01d9cbe16",
+    "references/capabilities/grace-based-confession.md": "dd5242c32328beeaf5bcf235ec7c658cd7870cf3353dee4350072b117333071d",
+    "references/capabilities/lords-prayer-pattern.md": "926f452fd9fb4c741a9b8d6892e6304296cc50b1bb3d22cfc8c2b2b49910bc03",
+    "references/capabilities/order-desires.md": "ae2486bf699b7007ac58f1e6d95a63339fad5be1e18804f363423fc971712869",
+    "references/capabilities/petition-and-lament.md": "ec4f67c24e9c4b47c1b87263748f9b24b17d951e387f95d4eae5b836baec6b40",
+    "references/capabilities/prayer-touchstones.md": "bf3607d85a50c1bdea5f32a2b3fa0a05e4b1023df4c5a0ba8a76ed09a5e68b8a",
+    "references/capabilities/psalms-in-prayer.md": "f0eac8dd14ac165e549d036bf85550597779df6f0db94664225f6c9bbd6ea459",
+    "references/capabilities/scripture-to-prayer.md": "98fcd417b979188578a56959b94563c5eb7573e11a6f4a0f8e04240d4698bf86",
+    "references/capabilities/seek-gods-face.md": "0b9bd060012e19fa012337fcde75ea590a14b002226c6322b729e9dcdcd4102a",
+    "references/capability-index.md": "20d81725ea3559118d8f79895bcc012a46e08b2695fc2b69b11a0e1528cb1f04",
+    "references/cheatsheet.md": "e75bbfd51887c8be4ab7415678f17cfb73a75cc1ebb8940b35f40ec84f68ac31",
+    "references/glossary.md": "5a56edd632ff2a03e5f230d23c627ebc52ade03d795d094a9a0b26c8e882cdb7",
+    "references/overview.md": "123132a2e623324c45ac0fe56662ae40986c1cde76a32933c262b7bcc167d418"
+  },
+  "note": "update/重编译前比对 published_hashes；检测到本地手改不得静默覆盖",
+  "bundle_id": "bundle.keller-prayer",
+  "bundle_sha256": "dc211425bdcfa81a283da897164dfcbd4ed4028f63963d4d576cba4ffc4c08eb",
+  "variant": "single",
+  "run_id": "run-20261110-210014-a52dda",
+  "decision": {
+    "schema_version": 1,
+    "requested": "single",
+    "selected": "single",
+    "decision_policy": "single-first-v1",
+    "skill_budget": 8,
+    "promoted_count": 0,
+    "capability_count": 10,
+    "reasons": [
+      "用户显式选择 single，auto 决策器不覆盖用户选择"
+    ],
+    "alternative": "compact pack（1 个来源路由入口 + 0 个晋级 Skill，共 1 个可发现入口）",
+    "user_confirmed": true,
+    "preserve_strategy_on_update": true
+  }
+}
